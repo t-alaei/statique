@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Otter World</title>
+    <link rel="stylesheet" href="node_modules/purecss/build/pure-min.css"/>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+
+</head>
+<body>
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="index.html">Otter World</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="about.html" class="pure-menu-link">About</a></li>
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main">
+    <div class="pure-g">
+        <h1 class="pure-u-1-1">
+            Contactez-nous
+        </h1>
+    </div>
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <legend>Formulaire de Contact</legend>
+
+            <div class="pure-control-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Email Address" required=""/>
+            </div>
+
+            <div class="pure-control-group">
+                <label for="object">Objet</label>
+                <select id="object" required="">
+                    <option> --- </option>
+                    <option>Je veux vous rejoindre !</option>
+                    <option>Je veux proposer un partenariat.</option>
+                    <option>Autre</option>
+                </select>
+            </div>
+
+            <div class="pure-control-group">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="pure-controls">
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+</body>
+</html>
+
