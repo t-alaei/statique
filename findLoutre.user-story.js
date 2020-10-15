@@ -17,6 +17,7 @@ describe('Form test', () => {
     test('correct negative answer', async () => {
         await browser.get(url);
         await browser.findElement(By.id("message")).sendKeys("Des loutres");
+        await browser.findElement(By.id("button-send")).click();
         var answer = await browser.findElement(By.id("response")).getText();
         expect(answer).toBe("Merci pour votre participation !")
     }, 10000);
