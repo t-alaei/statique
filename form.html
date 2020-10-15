@@ -22,41 +22,37 @@
 </div>
 
 <div class="main">
-    <div class="pure-g">
-        <h1 class="pure-u-1-1">
-            Contactez-nous
-        </h1>
+    <div class="pure-u-1-2">
+        <div class="pure-g">
+            <h1 class="pure-u-1-1">
+                Contactez-nous
+            </h1>
+        </div>
+        <form class="pure-form pure-form-aligned">
+            <fieldset>
+                <legend>Formulaire de Contact</legend>
+                <div id="instruction">Envoyez nous un message sur les loutres !</div>
+                <div class="pure-control-group">
+                    <label for="message">Message</label>
+                    <textarea type="text" id="message" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="pure-controls">
+                    <button id="button-send" class="pure-button button-color">Envoyer</button>
+                </div>
+            </fieldset>
+        </form>
     </div>
-    <form class="pure-form pure-form-aligned">
-        <fieldset>
-            <legend>Formulaire de Contact</legend>
-
-            <div class="pure-control-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Email Address" required=""/>
-            </div>
-
-            <div class="pure-control-group">
-                <label for="object">Objet</label>
-                <select id="object" required="">
-                    <option> --- </option>
-                    <option>Je veux vous rejoindre !</option>
-                    <option>Je veux proposer un partenariat.</option>
-                    <option>Autre</option>
-                </select>
-            </div>
-
-            <div class="pure-control-group">
-                <label for="message">Message</label>
-                <textarea type="text" id="message" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="pure-controls">
-                <button type="submit" class="pure-button pure-button-primary">Submit</button>
-            </div>
-        </fieldset>
-    </form>
+    <div class="pure-u-1-2">
+        <div id="response" data-last-resp="0">Envoyez nous un message sur les loutres !</div>
+    </div>
 </div>
+
+<script>
+    module = {}
+</script>
+<script src="findLoutre.js"></script>
+<script src="main.js"></script>
 
 
 </body>
